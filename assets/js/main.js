@@ -1,5 +1,4 @@
 const active = (element) => {
-  //CLICK// /*
   let itens = document.getElementsByClassName("btns-circle");
 
   for (i = 0; i < itens.length; i++) {
