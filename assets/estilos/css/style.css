@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Overpass", sans-serif;
+}
+
+.content {
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+}
+
+.star {
+  background-color: hsl(214deg, 18%, 25%);
+}
+
+.card {
+  width: 33%;
+  height: 70%;
+  background-color: hsl(213deg, 19%, 18%);
+}
+
+.card-title {
+  color: hsl(0deg, 0%, 100%);
+}
+
+.card-text {
+  font-size: 15px;
+  color: hsl(216deg, 12%, 54%);
+}
+
+.btns-circle {
+  background-color: hsl(214deg, 18%, 25%) !important;
+  border: 0;
+  width: 50px;
+  text-align: center;
+  height: 50px;
+  border-radius: 50%;
+  color: hsl(216deg, 15%, 74%);
+  font-weight: 700;
+}
+.btns-circle:hover {
+  background-color: hsl(25deg, 97%, 53%) !important;
+  color: #fff !important;
+}
+
+.btn-submit {
+  background-color: hsl(25deg, 97%, 53%);
+  border: 0;
+  height: 40px;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+}
+.btn-submit:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
+}
+
+.links {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.active {
+  background-color: hsl(25deg, 97%, 53%) !important;
+  color: #fff !important;
+}
+
+#box {
+  display: block;
+}
+
+#box1,
+.box1 {
+  display: none;
+  flex-direction: column;
+}
+
+.card-text-select {
+  font-size: 15px;
+  padding: 8px;
+  width: 178px;
+  text-align: center;
+  height: 33px;
+  color: hsl(25deg, 97%, 53%);
+  background-color: hsl(214deg, 18%, 25%);
+  border-radius: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */

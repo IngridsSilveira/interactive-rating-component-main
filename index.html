@@ -1,49 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/estilos/css/reset.css">
+  <link rel="stylesheet" href="./assets/estilos/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/estilos/css/style.css">
+
   <title>Frontend Mentor | Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
 
-  <!-- Rating state start -->
+<body class="container-fluid bg-dark text-white d-flex justify-content-center align-items-center content">
 
-  How did we do?
+  <main class="mb-5 d-flex align-items-center justify-content-center content">
+    <div class="card rounded-5 p-3 " id="box">
+      <div class="card-body">
+        <img src="./assets/images/icon-star.svg" alt="icon star" class="mb-4 star rounded-circle p-2">
+        <h3 class="card-title">How did we do?</h3>
+        <p class="card-text">
+          Please let us know how we did with your support request. All feedback is appreciated
+          to help us <br>improve our offering!
+        </p>
+        <div class="d-flex align-items-center justify-content-center mb-4">
+          <button id="1" class="btns-circle me-4" onclick="active(this)">1</button>
+          <button id="2" class="btns-circle me-4" onclick="active(this)">2</button>
+          <button id="3" class="btns-circle me-4" onclick="active(this)">3</button>
+          <button id="4" class="btns-circle me-4" onclick="active(this)">4</button>
+          <button id="5" class="btns-circle" onclick="active(this)">5</button>
+        </div>
+        <button class="btn-submit rounded-4">Submit</button>
+      </div>
+    </div>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+    <div class="card rounded-5 p-3 " id="box1">
+      <div class="card-body d-flex justify-content-center align-items-center box1">
+        <img src="./assets/images/illustration-thank-you.svg" alt="illustration thank you" class="mb-4">
+        <p class="card-text-select">You selected <span class="num-select">0</span> out of 5</p>
+        <h3 class="card-title mb-3">Thank you!</h3>
+        <p class="card-text">
+          We appreciate you taking the time to give a rating.
+          If you ever need more support, don't hesitate to get in touch!
+        </p>
+      </div>
+    </div>
 
-  1 2 3 4 5
+  </main>
 
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="rodape d-flex justify-content-evenly w-75">
+    <p>Challenge by <a class="links" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
+        Mentor</a>.</p>
+    <p>Coded by <a class="links" href="https://ingridssilveira.github.io/IngridSouza/">Ingrid Souza</a>.</p>
   </div>
+
+  <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
