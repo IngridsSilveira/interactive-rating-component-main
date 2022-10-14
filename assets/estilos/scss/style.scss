@@ -13,8 +13,8 @@
   background-color: hsl(214, 18%, 25%);
 }
 .card {
-  width: 33%;
-  height: 70%;
+  height: 380px;
+  max-width: 400px;
   background-color: hsl(213, 19%, 18%);
 }
 .card-title {
@@ -23,13 +23,14 @@
 .card-text {
   font-size: 15px;
   color: hsl(216, 12%, 54%);
+  text-align: center;
 }
 .btns-circle {
   background-color: hsl(214, 18%, 25%) !important;
+  padding: 15px;
+  width: 100px;
   border: 0;
-  width: 50px;
   text-align: center;
-  height: 50px;
   border-radius: 50%;
   color: hsl(216, 15%, 74%);
   font-weight: 700;
@@ -76,4 +77,18 @@
   color: hsl(25, 97%, 53%);
   background-color: hsl(214, 18%, 25%);
   border-radius: 30px;
+}
+
+@media screen and (min-width: 0) and (max-width: 500px) {
+  .card {
+    max-width: 300px;
+  }
+  .rodape {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 501px) and (max-width:1000px) {
+  .card {
+    width: auto;
+  }
 }
